@@ -14,14 +14,11 @@
             <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
         <Label FontSize="20" Grid.Row="0" Margin="10,0,0,0">Laporan</Label>
-        <Border Background="White" BorderThickness="1" Grid.Row="1" BorderBrush="#333333" Margin="10,0,710,314" Grid.RowSpan="2">
-            <Label Content="ID TRANSAKSI" FontSize="10" FontWeight="Bold" Foreground="Black"/>
+        <Border Background="White" BorderThickness="1" Grid.Row="1" BorderBrush="#333333" Margin="10,0,703,314" Grid.RowSpan="2">
+            <Label Content="ID TRANSAKSI" FontSize="10" FontWeight="Bold" Foreground="Black" Margin="0,0,-1,0"/>
         </Border>
-        <Border Background="White" BorderThickness="1" Grid.Row="1" BorderBrush="#333333" Margin="90,0,600,314" Grid.RowSpan="2">
-            <Label Content="NAMA PELANGGAN" FontSize="10" FontWeight="Bold" Foreground="Black"/>
-        </Border>
-        <Border Background="White" BorderThickness="1" Grid.Row="1" BorderBrush="#333333" Margin="200,0,358,314" Grid.RowSpan="2">
-            <Label Content="HARGA" FontSize="10" FontWeight="Bold" Foreground="Black" Margin="0,0,-1,0"/>
+        <Border Background="White" BorderThickness="1" Grid.Row="1" BorderBrush="#333333" Margin="95,0,358,314" Grid.RowSpan="2">
+            <Label Content="HARGA" FontSize="10" FontWeight="Bold" Foreground="Black" Margin="31,0,-1,0"/>
         </Border>
         <Border Background="White" BorderThickness="1" Grid.Row="1" BorderBrush="#333333" Margin="442,0,100,314" Grid.RowSpan="2">
             <Label Content="JUMLAH" FontSize="10" FontWeight="Bold" Foreground="Black" Margin="4,0,0,0"/>
@@ -38,15 +35,13 @@
                     <Grid Margin="0,4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="75" />
-                            <ColumnDefinition Width="80" />
                             <ColumnDefinition Width="75" />
                             <ColumnDefinition Width="225" />
                             <ColumnDefinition Width="80" />
                             <ColumnDefinition Width="100" />
                         </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" Text="{Binding id_transaksi}" TextAlignment="Left" FontSize="16"/>
-                            <TextBlock Grid.Column="1" Text="{Binding nama}" TextAlignment="Left" FontSize="16"/>
-                            <TextBlock Grid.Column="2" Text="{Binding harga}"  TextAlignment="Right" FontSize="16"/>
+                        <TextBlock Grid.Column="0" Text="{Binding id_transaksi}" TextAlignment="Left" FontSize="16"/>
+                        <TextBlock Grid.Column="2" Text="{Binding harga}"  TextAlignment="Right" FontSize="16"/>
                             <TextBlock Grid.Column="3" Text="{Binding jumlah}"  TextAlignment="Right" FontSize="16"/>
                             <TextBlock Grid.Column="4" Text="{Binding diskonpersen}"  TextAlignment="Right" FontSize="16"/>
                             <TextBlock Grid.Column="5" Text="{Binding total}"  TextAlignment="Right" FontSize="16"/>
