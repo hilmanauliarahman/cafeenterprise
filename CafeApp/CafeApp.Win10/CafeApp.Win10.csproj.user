@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Home\Dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\Item.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\ItemControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\Jenis.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\JenisControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\ListMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\ReportControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home\TransaksiControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Home\Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\Item.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\ItemControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\Jenis.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\JenisControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\ListMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\ReportControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home\TransaksiControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

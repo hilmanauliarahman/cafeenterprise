@@ -1,0 +1,40 @@
+﻿<Window x:Class="CafeApp.Win10.Views.Home.Jenis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeApp.Win10.Views.Home"
+        mc:Ignorable="d" Height="250" Width="400"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow"
+        Title="Jenis">
+    <Grid Height="250" Width="400" Background="#152238">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+            <Label Content="DATA JENIS" FontSize="30" Foreground="white" Width="172" Height="48"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <Label Content="ID JENIS" Margin="35,0,35,0" FontSize="12" Foreground="white" Width="331"/>
+            <TextBox x:Name="id_jenis" Text="{Binding ModelJenis.id_jenis, Mode=TwoWay}" Height="21" Width="322" />
+            <Label Content="NAMA" Margin="35,0,35,0" FontSize="12" Foreground="white" Width="331"/>
+            <TextBox x:Name="nama_jenis" Text="{Binding ModelJenis.nama_jenis, Mode=TwoWay}" Height="21" Width="322" />
+        </StackPanel>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="BtnDelete" Command="{Binding DeleteCommand}" Content="DELETE" Grid.Column="0" Margin="40,10,0,35"/>
+            <Button x:Name="BtnSave" Command="{Binding CreateCommand}" Content="SAVE" Grid.Column="1" Margin="10,10,10,35"/>
+            <Button x:Name="BtnUpdate" Command="{Binding UpdateCommand}" Content="UPDATE" Grid.Column="1" Visibility="Hidden" Margin="10,10,10,35"/>
+            <Button x:Name="BtnClose" Content="CLOSE" Grid.Column="2" Margin="0,10,38,35" Click="BtnClose_Click"/>
+        </Grid>
+    </Grid>
+</Window>

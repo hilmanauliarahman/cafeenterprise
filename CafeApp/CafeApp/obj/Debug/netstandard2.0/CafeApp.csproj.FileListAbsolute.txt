@@ -1,0 +1,6 @@
+D:\Kuliah\PemrogLanjut\CafeEnterprise\CafeApp\CafeApp\obj\Debug\netstandard2.0\CafeApp.csprojAssemblyReference.cache
+D:\Kuliah\PemrogLanjut\CafeEnterprise\CafeApp\CafeApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Kuliah\PemrogLanjut\CafeEnterprise\CafeApp\CafeApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\Kuliah\PemrogLanjut\CafeEnterprise\CafeApp\CafeApp\obj\Debug\netstandard2.0\CafeApp.AssemblyInfoInputs.cache
+D:\Kuliah\PemrogLanjut\CafeEnterprise\CafeApp\CafeApp\obj\Debug\netstandard2.0\CafeApp.AssemblyInfo.cs
+D:\Kuliah\PemrogLanjut\CafeEnterprise\CafeApp\CafeApp\obj\Debug\netstandard2.0\CafeApp.csproj.CoreCompileInputs.cache

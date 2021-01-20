@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\avatar.png" />
+    <None Remove="Assets\bg.jpg" />
+    <None Remove="Assets\bg.png" />
+    <None Remove="Views\Home\avatar.png" />
+    <None Remove="Views\Home\bg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\avatar.png" />
+    <Resource Include="Assets\bg.jpg" />
+    <Resource Include="Assets\bg.png" />
+    <Resource Include="Views\Home\avatar.png" />
+    <Resource Include="Views\Home\bg.png" />
+  </ItemGroup>
+
+</Project>

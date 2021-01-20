@@ -1,0 +1,65 @@
+﻿<Window x:Name="MyDashboard" x:Class="CafeApp.Win10.Views.Home.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CafeApp.Win10.Views.Home"
+        mc:Ignorable="d" MinWidth="800" MaxHeight="800"
+        ResizeMode="CanResize"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="SingleBorderWindow"
+        Title="Dashboard">
+    <Window.Background>
+        <ImageBrush ImageSource="/Views/Home/bg.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Background="#99d3d3d3" Grid.ColumnSpan="2">
+            <MenuItem Header="_Home" FontSize="14" FontWeight="Bold"/>
+            <MenuItem Header="_Menu" FontSize="14" FontWeight="Bold" Click="MenuItem_Click"/>
+            <MenuItem Header="_Transaksi" FontSize="14" FontWeight="Bold"/>
+            <MenuItem Header="Logout" Click="MnuExit_Click" FontSize="14" FontWeight="Bold"/>
+        </Menu>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Background="#152238">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="92*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="60*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical" Grid.Row="0">
+                    <Image Width="200" Height="200" Source="/Views/Home/avatar.png" Margin="10,15,10,10"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Row="1">
+                    <Label Content="ADMIN" HorizontalAlignment="Center" Margin="35,0,35,0" FontSize="28" Foreground="White" Width="103"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Row="2">
+                    <Button x:Name="BtnItem" Click="MenuItem_Click" HorizontalAlignment="Center" Background="#152238" Content="Data Barang" FontWeight="DemiBold" Margin="35,0,35,0" FontSize="28" Foreground="White" Width="331"/>
+                    <Button Content="Data Jenis" HorizontalAlignment="Center" FontWeight="DemiBold" Background="#152238" Margin="35,0,35,0" FontSize="28" Foreground="White" Width="331" Click="Button_Click"/>
+                    <Button Content="Transaksi" HorizontalAlignment="Center" FontWeight="DemiBold" Background="#152238" Margin="35,0,35,0" FontSize="28" Foreground="White" Width="331" Click="Button_Click_1"/>
+                    <Button Content="Laporan" HorizontalAlignment="Center" FontWeight="DemiBold" Background="#152238" Margin="35,0,35,0" FontSize="28 " Foreground="White" Width="331" Click="Button_Click_2"/>
+                </StackPanel>
+            </Grid>
+            <Grid Background="#991034A6" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2">
+                <Label FontSize="30" FontWeight="Bold" Foreground="White">Selamat Datang di Aplikasi Cafe Enterprise!</Label>
+            </Grid>
+            <DockPanel x:Name="PnlContent" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Background="#99fffff0"/>
+        </Grid>
+    </Grid>
+</Window>
